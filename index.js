@@ -16,7 +16,7 @@ console.log(subtrair(7, 4));
 
 const dividir = (a, b) =>{
   if(a == 0 || b == 0){
-    return ("Erro: divisão por zero");
+   throw new Error("Erro: divisão por zero")
   }
   else
     return (a / b);
@@ -40,9 +40,9 @@ console.log(calcularAreaRetangulo(10, 2));
 
 const verificarParOuImpar = (numero) => {
   if(numero % 2 === 0) {
-    return ("O número é par");
+    return ("par");
   } else{
-    return ("O número é ímpar");
+    return ("ímpar");
   }
 }
 console.log(verificarParOuImpar(10));
